@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&family=Poppins:wght@300&family=Ubuntu:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&family=Poppins:wght@300&family=Roboto:wght@400;500;700&family=Ubuntu:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins' sans-serif; */
+  /* font-family: 'Noto Serif JP', serif; */
+  font-family: "Roboto", sans-serif;
+  /* font-family: 'Ubuntu', sans-serif; */
+}
+
+:root {
+  --preto--color: #1a1716;
+  --branco--color: #ccc6c4;
+  --amarelo--color: #e5b522;
+  --linear-button--color: linear-gradient(to top, #e4b526, #b68d11);
+  --button-text--color: #591b1b;
+  --gradient--color: linear-gradient(to top, #e4b526, #b68d11);
+  --preto-footer--color: #0d0b0b;
+  --vermelho--color: #a63232;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #1a1716;
+}
+
+.header {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  flex-direction: row;
+  background: #0d0b0b;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.logo {
+  color: white;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logo img {
+  width: 64px;
+  height: 34px;
+}
+
+.logo:hover {
+  color: var(--amarelo--color);
+  transition: 1s ease-in-out;
+}
+
+.btn {
+  background: var(--linear-button--color);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5%;
+  box-shadow: 0px 4px 6px 0px #00000026;
+  color: #591b1b;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.promocao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #591b1b;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 40px;
+}
+
+.promo .ptexto {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.promo .vinte {
+  color: var(--amarelo--color);
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  width: 680px;
+  height: 45px;
+  top: 52px;
+  left: 380px;
+}
+
+.search-bar input {
+  border: 2px solid #ccc6c44d;
+  border-radius: 2px;
+  background: transparent;
+  color: var(--branco--color);
+  padding-left: 8px;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: #ccc6c44d;
+  text-transform: uppercase;
+  padding-left: 8px;
+}
+
+.banner-container {
+  width: 100%;
+  height: 395px;
+  margin-top: 4px;
+  background-image: url(./assets/img/bannerimage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-container img {
+  width: 100%;
+  height: 395px;
+}
+
+.weekend-trend {
+  width: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: 64px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.texto-weekend {
+  color: var(--branco--color);
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-around;
+  gap: 16px;
+}
+
+.card {
+  width: calc((100% - 32px) / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 4px;
+}
+
+.weekend-trend .card-image {
+  width: 100%;
+  height: 500px;
+  border-radius: 4px;
+  background-image: url(./assets/img/card-image1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texto1 {
+  width: 100%;
+  color: var(--branco--color);
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price .dinhero {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.price p {
+  font-size: 24px;
+  padding-right: 2px;
+}
+
+.price span {
+  color: #e5b522;
+}
+
+.price sup {
+  font-size: 14px;
+}
+
+.banner-grande {
+  width: 100%;
+  height: 200px;
+  margin-top: 64px;
+  background-image: url(./assets/img/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
